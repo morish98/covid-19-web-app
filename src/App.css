@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --primary: hsla(243, 10%, 40%, 0.774);
+  --secondary: hsla(240, 8%, 95%, 0.555);
+}
+
+body {
+  background: linear-gradient(45deg, var(--primary), var(--secondary)),
+              url('./corona-4959447_1920.jpg') no-repeat top center / cover;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__header>h1 {
+  color: #290909;
+  font-size: 2rem;
+  font-kerning: 15px;
+}
+
+.app__dropdown {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px;
+}
+
+.app__graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
